@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Stopwatch.js"></script>
+    <title>Audio and Motion Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(27, 27, 27);
+            color: rgb(194, 194, 194);
+
+
+        }
+        header {
+            background: #4267b2;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+        }
+        .D {margin: 0;
+            padding-left: -100px;
+            position: absolute;
+            left: 91%;
+        font-size: 25px; }
+        header h1 {
+            margin: 0;
+            padding-left: -100px;
+            position: absolute;
+            left: 4%;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
+        
+        .E {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: relative;
+            left: 1800px;
+        }
+        nav {
+            background: rgba(155, 145, 145, 0.1);
+            padding: 25px;
+            border-bottom: 2px solid #3a3a3a;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #4267b2;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #272727;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            font-size: 18px;
+            color: #838383;
+            padding-bottom: 5px;
+        }
+        .member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .member img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .motion {
+            width: 100px;
+            height: 100px;
+            background-color: #007BFF;
+            position: relative;
+            animation: move 2s infinite alternate;
+        }
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(200px);
+            }
+        }
+        .motion1 {
+            width: 100px;
+            height: 100px;
+            background-color: #007BFF;
+            position: relative;
+            animation: move 0.2s infinite alternate;
+        }
+        @keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+.motion2 {
+            width: 100px;
+            height: 100px;
+            background-color: #007BFF;
+            position: relative;
+            animation: moves 1s infinite alternate;
+        }
+        @keyframes moves {
+    from {
+        transform: translateX(0) rotate(0deg);
+    }
+    to {
+        transform: translateX(200px) rotate(360deg);
+    }
+}
+        .motion3 {
+            width: 100px;
+            height: 100px;
+            background-color: #007BFF;
+            position: relative;
+            animation: movie 1.2s infinite alternate;
+        }
+        @keyframes movie {
+            0%   {top: 0px; left: 0px;}
+  25%  {top: 0px; left: 100px;}
+  50%  {top: 100px; left: 100px;}
+  75%  {top: 100px; left: 0px;}
+  100% {top: 100px; left: 100px;}
+}
+.motion4 {
+            width: 100px;
+            height: 100px;
+            background-color: #007BFF;
+            position: relative;
+            animation: mov 1s infinite alternate;
+        }
+        @keyframes mov {
+            from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+  0% {
+    background-color: red;
+  }
+  14.2857142857% {
+    background-color: orange;
+  }
+  28.5714285714% {
+    background-color: orange;
+  }
+  42.8571428571% {
+    background-color: orange;
+  }
+  57.1428571429% {
+    background-color: orange;
+  }
+  71.4285714286% {
+    background-color: orange;
+  }
+  85.7142857143% {
+    background-color: orange;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+element {
+  animation: rainbow 5s infinite;
+}
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #4267b2;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="C:\Users\CLVN\Documents\Mil Website\download.jpg" alt="Facebook Icon">
+    <img class="E" src="C:\Users\CLVN\Documents\Mil Website\default-avatar-icon-of-social-media-user-vector.jpg" alt="Facebook Icon">
+    <h1>Bookface</h1>
+    <h1 class="D">Eza Fulo</h1>
+</header>
+
+<nav>
+    <a href="Mil.html">Home</a>
+    <a href="Mil1.html">Friends</a>
+    <a href="#">Messages</a>
+    <a href="#">Notifications</a>
+</nav>
+
+<div class="content">
+    <section>
+        <h1> AUDIO
+            AUDIO
+            &
+            MOTION
+            MOTION
+            MEDIA</h1>
+        <h2>What is Audio?</h2>
+        <p>A means or channel thatmakes use of certainsounds which significant have collect information withoutusing vision</p>
+        <br>
+        <h2>Design Elements of Audio Media</h2>
+        <h3> Dialogue</h3>
+            <p>Any sound that makes use
+            of specific intonations to
+            convey messages from one
+            individual to another.</p>
+
+            <h3>Sound Effects</h3>
+            <p>Additional sounds outside
+            of music and dialogue.
+            These are often used to
+            give emphasis and setting.</p>
+            
+            <h3>Music</h3>
+            <p>Vocal or instrumental
+            sounds combined to
+            produce a piece with
+            harmony and form.</p>
+            <h3>Silence</h3>
+            <p>Absence of audio or
+            sound. These are often
+            used to give emphasis or
+            set the pacing of audio
+            media.
+            <iframe width="560" height="300" src="https://www.youtube.com/watch?v=5KIqFvRRsKU&t=24842s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </p>
+           <br>
+        <h2>Design Principles</h2>
+        <h3>Stereo-Imaging</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N02Y7vaVDNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p> Here's an example of Stereo-Imaging in the form of a very handsome man whispering in your ear <br>(Please wear Headphones)</p>
+    </section>
+
+    <section>
+        <h2>What is Motion Media?</h2>
+        <p>Motion media uses visuals to simulate movement. It can represent the flow of information and evoke emotions through speed, direction, and timing.</p>
+        <div class="motion"></div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <section>
+        <h2>Design Elements of Motion Media</h2>
+    <h3>Speed</h3>
+ <p>The pacing of the
+    movement can be based
+    on additional audio or the
+    context of the scenario.</p>
+    <div class="motion1"></div>
+    <br>
+   <h3>Motion</h3>
+ <p>This is where objects move
+    can reflect the progression
+    or moving forward of
+    information transfer.</p>
+    <div class="motion2"></div>
+ <h3>Direction</h3>
+ <p>These are the triggers that
+    signify the change in
+    direction of an object.</p>
+    <div class="motion3"></div>
+    <br><br><br><br><br>
+ <h3>Timing</h3>
+ <p>This can be objective which
+    is measured in actual units
+    of time or subjective where
+    it is psychological rather
+    than accurate to passage
+    of time.</p>
+    <div class="motion4"></div>
+    <p>it takes 1 second for the box to turn red</p>
+        </ul>
+    </section>
+</div>
+
+
+</body>
+</html>
+
+
