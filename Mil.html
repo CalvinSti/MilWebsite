@@ -199,13 +199,13 @@ element {
             color: #fff;
             margin-top: 20px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
         .content {
             max-width: 100%;
             padding: 15px;
         }
     }
-        @media (max-width: 600px) {
+        @media (max-width: 1000px) {
             header {
                 flex-direction: column;
                 text-align: center;
@@ -215,20 +215,25 @@ element {
                 padding: 5px;
             }
             iframe {
-                width: 100%;
-                height: auto;
+                width: 50vh;
+                height: 50vh;
             }
             .motion, .motion1, .motion2, .motion3, .motion4 {
                 width: 80px;
                 height: 80px;
             }
+            .F {
+            display: none;
+        }
+        .D {display:none;}
+    
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="download.jpg" alt="Facebook Icon">
+    <img Class="F" src="download.jpg" alt="Facebook Icon">
     <img class="E" src="default-avatar-icon-of-social-media-user-vector.jpg" alt="Facebook Icon">
     <h1>Bookface</h1>
     <h1 class="D">Eza Fulo</h1>
@@ -276,13 +281,13 @@ element {
             used to give emphasis or
             set the pacing of audio
             media.
-            <br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/5KIqFvRRsKU?start=24842" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br><iframe class="Vid" width="560" height="315" src="https://www.youtube.com/embed/5KIqFvRRsKU?start=24842" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            <p>10 Hours Of Silence occasionally broken up by Lego Yoda</p>
         </p>
            <br>
         <h2>Design Principles</h2>
         <h3>Stereo-Imaging</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/N02Y7vaVDNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" class="Vid" src="https://www.youtube.com/embed/N02Y7vaVDNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p> Here's an example of Stereo-Imaging in the form of a very handsome man whispering in your ear <br>(Please wear Headphones)</p>
     </section>
 
