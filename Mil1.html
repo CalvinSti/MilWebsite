@@ -65,16 +65,16 @@
             text-decoration: underline;
         }
         .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #272727;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #272727;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
         .content h2 {
             font-size: 18px;
-            color: #858686;
+            color: #838383;
             padding-bottom: 5px;
         }
         .member {
@@ -88,7 +88,7 @@
             border-radius: 50%;
             margin-right: 8px;
         }
-        .motion-demo {
+        .motion {
             width: 100px;
             height: 100px;
             background-color: #007BFF;
@@ -103,6 +103,94 @@
                 transform: translateX(200px);
             }
         }
+        .motion1 {
+            width: 100px;
+            height: 100px;
+            background-color: #007BFF;
+            position: relative;
+            animation: move 0.2s infinite alternate;
+        }
+        @keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+.motion2 {
+            width: 100px;
+            height: 100px;
+            background-color: #007BFF;
+            position: relative;
+            animation: moves 1s infinite alternate;
+        }
+        @keyframes moves {
+    from {
+        transform: translateX(0) rotate(0deg);
+    }
+    to {
+        transform: translateX(200px) rotate(360deg);
+    }
+}
+        .motion3 {
+            width: 100px;
+            height: 100px;
+            background-color: #007BFF;
+            position: relative;
+            animation: movie 1.2s infinite alternate;
+        }
+        @keyframes movie {
+            0%   {top: 0px; left: 0px;}
+  25%  {top: 0px; left: 100px;}
+  50%  {top: 100px; left: 100px;}
+  75%  {top: 100px; left: 0px;}
+  100% {top: 100px; left: 100px;}
+}
+.motion4 {
+            width: 100px;
+            height: 100px;
+            background-color: #007BFF;
+            position: relative;
+            animation: mov 1s infinite alternate;
+        }
+        @keyframes mov {
+            from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+  0% {
+    background-color: red;
+  }
+  14.2857142857% {
+    background-color: orange;
+  }
+  28.5714285714% {
+    background-color: orange;
+  }
+  42.8571428571% {
+    background-color: orange;
+  }
+  57.1428571429% {
+    background-color: orange;
+  }
+  71.4285714286% {
+    background-color: orange;
+  }
+  85.7142857143% {
+    background-color: orange;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+element {
+  animation: rainbow 5s infinite;
+}
+        
         footer {
             text-align: center;
             padding: 10px;
@@ -110,23 +198,50 @@
             color: #fff;
             margin-top: 20px;
         }
+        @media (max-width: 1000px) {
+        .content {
+            max-width: 100%;
+            padding: 15px;
+        }
+    }
+        @media (max-width: 1000px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                gap: 10px;
+                padding: 5px;
+            }
+            iframe {
+                width: 50vh;
+                height: 50vh;
+            }
+            .motion, .motion1, .motion2, .motion3, .motion4 {
+                width: 80px;
+                height: 80px;
+            }
+            .F {
+            display: none;
+        }
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="C:\Users\CLVN\Documents\Mil Website\download.jpg" alt="Facebook Icon">
-    <img class="E" src="C:\Users\CLVN\Documents\Mil Website\default-avatar-icon-of-social-media-user-vector.jpg" alt="Facebook Icon">
-    <h1>Bookface</h1>
-    <h1 class="D">Eza Fulo</h1>
-</header>
-
-<nav>
-    <a href="Mil.html">Home</a>
-    <a href="Mil1.html">Friends</a>
-    <a href="#">Messages</a>
-    <a href="#">Notifications</a>
-</nav>
+    <header>
+        <img Class="F" src="download.jpg" alt="Facebook Icon">
+        <img class="E" src="default-avatar-icon-of-social-media-user-vector.jpg" alt="Facebook Icon">
+        <h1>Bookface</h1>
+        <h1 class="D">Eza Fulo</h1>
+    </header>
+    
+    <nav>
+        <a href="Mil.html">Home</a>
+        <a href="Mil1.html">Friends</a>
+        <a href="#">Messages</a>
+        <a href="#">Notifications</a>
+    </nav>
 
 <div class="content">
     <section>
